@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ----------------------global styles start-------------------- */
+:root{
+    --light_color:#f8f4f4;
+    --dark_color:#181818;
+}
+body{
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+*{
+    font-family: 'Raleway', sans-serif;
+}
+/* ----------------------global styles start-------------------- */
+/* ----------------------main page start-------------------- */
+.main_page{
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2% 0 2% 0;
+    color: var(--light_color);
+}
+.logo{
+    margin: 0;
+    font-weight: 800;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    margin: 0 3.1rem 0 0;
+    column-gap: 3rem;
+}
+nav ul a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--light_color);
+    margin-right: 3%;
+}
+.main_page h1{
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    width: 25%;
+    padding: 2rem 5rem 2rem 1rem;
+    margin: 15% 0 17% 0;
+}
+.main_page i {
+    display: none;
+}
+/* ----------------------main page end-------------------- */
+/* ----------------------creation start-------------------- */
+.creation{
+    margin-top: 8%;
+}
+.creation .container{
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.bg_img{
+    width: 45rem;
+    height: 30rem;
+    background-image: url(../images/desktop/image-interactive.jpg);
+    background-size: cover;
+}
+.description{
+    position: absolute;
+    width: 60%;
+    background-color: #fff;
+    padding: 2rem 0 2.5rem 5rem;
+    right: 0%;
+    bottom: 0%;
+}
+.description h1{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.1rem;
+}
+.description p{
+    font-size: 1.2rem;
+}
+/* ----------------------creation end-------------------- */
+/* ----------------------gallery start-------------------- */
+.gallery{
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+.gallery *{
+    font-weight: 300;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top input{
+    padding: 1%;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.top input:hover{
+    background-color:#646464;
+    color: #fff;
+}
+.img{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 5rem;
+    column-gap: 1.5rem;
+}
+.img *{
+    cursor: pointer;
+    padding: 95% 0 5% 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-weight: 400;
+}
+.img div{    /*image overlay*/
+    padding: 0;
+    background-color: #fff;
+}
+.img :nth-child(1){
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+}
+.img :nth-child(2){
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+}
+.img :nth-child(3) h2{
+    padding: 80% 0 20% 1%;
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+}
+.img :nth-child(4){
+    background-image: url(../images/desktop/image-grid.jpg);
+}
+.img :nth-child(5){
+    background-image: url(../images/desktop/image-from-above.jpg);
+}
+.img :nth-child(6){
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+}
+.img :nth-child(7){
+    background-image: url(../images/desktop/image-curiosity.jpg);
+}
+.img :nth-child(8){
+    background-image: url(../images/desktop/image-fisheye.jpg);
+}
+/* ----------------------gallery end-------------------- */
+/* ----------------------footer start-------------------- */
+footer{
+    margin-top: 7%;
+    padding: 2% 0 2% 0;
+    background-color: #000;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+.list{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.list a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5%;
+    text-transform: capitalize;
+}
+.social{
+    direction: rtl;
+    font-size: 1.5rem;
+}
+.social a{
+    margin-left: 5%;
+}
+footer p {
+    letter-spacing: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #bdbdbd;
+}
+/* ----------------------footer end-------------------- */
