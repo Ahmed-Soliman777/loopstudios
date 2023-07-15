@@ -39,7 +39,7 @@ nav ul{
     margin: 0 3.1rem 0 0;
     column-gap: 3rem;
 }
-nav ul a{
+nav ul > a{
     text-decoration: none;
     text-transform: capitalize;
     font-weight: 500;
@@ -55,7 +55,7 @@ nav ul a{
     padding: 2rem 5rem 2rem 1rem;
     margin: 15% 0 17% 0;
 }
-.main_page i {
+.check_btn, .responsive_list {
     display: none;
 }
 /* ----------------------main page end-------------------- */

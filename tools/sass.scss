@@ -10,11 +10,80 @@
     nav ul{
       display: none;
     }
-    .main_page i{
+    .check_btn{
       display: inline;
     }
-    .main_page h1{
+    .main_page {
+      h1{
         font-size: 2.5rem;
+      }
+    }
+    .responsive_list{
+      padding-top: 5%;
+      position: fixed;
+      z-index: 999;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      margin-top: 0%;
+      top: 0;
+      left: 0;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      //------------------------:;
+      // .show{
+      //   right: 0;
+      // }
+  }
+  .open{
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+    .responsive_list {
+      .container {
+        >:nth-child(1){
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+        }
+      }
+    }
+    .responsive_list{
+      .container {
+        >:nth-child(1){
+          >h2{
+            margin: 0;
+          }
+        } 
+      }
+    }
+    .responsive_list ul{
+      padding: 0;
+      list-style-type: none;
+      margin-top: 10%;
+    }
+    .responsive_list li{
+      margin-bottom: 3%;
+    }
+    .responsive_list a{
+      text-decoration: none;
+      color: #fff;
+      text-transform: capitalize;
+      font-weight: 600;
     }
   }
   @media (max-width: 425px) and (min-width: 0px) {
