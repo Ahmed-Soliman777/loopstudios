@@ -129,75 +129,48 @@
 }
 /*----------------------creation responsive end----------------------*/
 /*----------------------gallery responsive start----------------------*/
-@media (max-width: 890px) and (min-width: 0px) {
+@media (max-width: 1190px) and (min-width: 600px) {
   .img {
     grid-template-columns: 50% 50%;
-    column-gap: 18%;
   }
 }
-@media (max-width: 890px) and (min-width: 720px) {
-  .gallery {
-    margin-top: 25%;
+@media (max-width: 1190px) and (min-width: 890px) {
+  .img span {
+    bottom: 35px;
+    left: 30%;
   }
 }
-@media (max-width: 720px) and (min-width: 600px) {
-  .gallery {
-    margin-top: 30%;
-  }
-}
-@media (max-width: 600px) and (min-width: 540px) {
+@media (max-width: 890px) and (min-width: 600px) {
   .gallery {
     margin-top: 35%;
   }
 }
-@media (max-width: 540px) and (min-width: 500px) {
-  .gallery {
-    margin-top: 50%;
+@media (max-width: 890px) and (min-width: 768px) {
+  .img span {
+    bottom: 35px;
+    left: 20%;
   }
 }
-@media (max-width: 500px) and (min-width: 320px) {
-  .gallery {
-    margin-top: 70%;
-  }
-}
-@media (max-width: 425px) and (min-width: 0px) {
+@media (max-width: 600px) and (min-width: 0px) {
   .img {
     grid-template-columns: 100%;
-    align-items: center;
-    row-gap: 1rem;
+    row-gap: 20px;
   }
-  .img * {
-    padding: 4rem 0 1rem 1rem;
+  .desktop_img {
+    display: none;
   }
-  .img :nth-child(1) {
-    background-image: url(../images/mobile/image-deep-earth.jpg);
-  }
-  .img :nth-child(2) {
-    background-image: url(../images/mobile/image-night-arcade.jpg);
-  }
-  .img :nth-child(3) h2 {
-    padding: 4rem 0 1rem 1rem;
-    background-image: url(../images/mobile/image-soccer-team.jpg);
-  }
-  .img :nth-child(4) {
-    background-image: url(../images/mobile/image-grid.jpg);
-  }
-  .img :nth-child(5) {
-    background-image: url(../images/mobile/image-from-above.jpg);
-  }
-  .img :nth-child(6) {
-    background-image: url(../images/mobile/image-pocket-borealis.jpg);
-  }
-  .img :nth-child(7) {
-    background-image: url(../images/mobile/image-curiosity.jpg);
-  }
-  .img :nth-child(8) {
-    background-image: url(../images/mobile/image-fisheye.jpg);
+  .mobile_img {
+    display: block;
+    width: 100%;
   }
 }
-@media (max-width: 320px) and (min-width: 0px) {
+@media (max-width: 600px) and (min-width: 0px) {
   .gallery {
     margin-top: 80%;
+  }
+  .img span {
+    bottom: 10px;
+    left: 10px;
   }
 }
 /*----------------------gallery responsive end----------------------*/
