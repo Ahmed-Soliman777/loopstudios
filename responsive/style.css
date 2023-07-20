@@ -50,6 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+    margin-bottom: 20%;
   }
   .responsive_list .container > :nth-child(1) > h2 {
     margin: 0;
@@ -65,8 +66,8 @@
   .responsive_list a {
     text-decoration: none;
     color: #fff;
-    text-transform: capitalize;
-    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 500;
   }
 }
 @media (max-width: 425px) and (min-width: 0px) {
@@ -110,18 +111,27 @@
   }
 }
 @media (max-width: 570px) and (min-width: 490px) {
+  .creation {
+    margin-top: 50%;
+  }
   .bg_img {
     width: 30rem;
     height: 20rem;
   }
 }
 @media (max-width: 490px) and (min-width: 375px) {
+  .creation {
+    margin-top: 40%;
+  }
   .bg_img {
     width: 25rem;
     height: 15rem;
   }
 }
 @media (max-width: 375px) and (min-width: 0px) {
+  .creation {
+    margin-top: 20%;
+  }
   .bg_img {
     width: 15rem;
     height: 10rem;
@@ -166,7 +176,7 @@
 }
 @media (max-width: 600px) and (min-width: 0px) {
   .gallery {
-    margin-top: 80%;
+    margin: 80% 0 25% 0;
   }
   .img span {
     bottom: 10px;
